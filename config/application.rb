@@ -48,5 +48,7 @@ module MentionsOnTwitter
 
     config.middleware.use Rack::Deflater
 
+    config.autoload_paths += Dir["#{config.root}/app/services"]
+
   end
 end

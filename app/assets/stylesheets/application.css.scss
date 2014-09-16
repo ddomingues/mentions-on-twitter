@@ -1,6 +1,5 @@
-@import 'bourbon';
-@import 'base/base';
-@import 'neat';
+@import "bootstrap-sprockets";
+@import "bootstrap";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -16,3 +15,14 @@
  *
  *= require_self
  */
+
+.navigation-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-top: 80px;
+}
