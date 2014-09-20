@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get 'tweets/mentions' => 'tweets#mentions', as: :mentions
   get 'tweets/mentions_by_user' => 'tweets#mentions_by_user', as: :mentions_by_user
+  get 'about' => 'about#index', as: :about
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
