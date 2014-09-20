@@ -1,13 +1,16 @@
 pt-BR:
   models_and_attributes: &models_and_attributes
-    # models:
-    #   event:
-    #     one: Evento
-    #     other: Eventos
-    # attributes:
-    #     event:
-    #       name: Nome
   activerecord:
     <<: *models_and_attributes
   activemodel:
     <<: *models_and_attributes
+  tweets:
+    mentions:
+      title: Menções
+      panel-title: Tweets
+    mentions_by_user:
+      title: Menções Por Usuário
+      panel-title: Usuários
+  about:
+    index:
+      title: Sobre
