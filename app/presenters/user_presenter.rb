@@ -10,7 +10,7 @@ class UserPresenter
   end
 
   def screen_name
-    @user[:screen_name]
+    "@#{@user[:screen_name]}"
   end
 
   def name

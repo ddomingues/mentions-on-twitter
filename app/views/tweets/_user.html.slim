@@ -4,6 +4,8 @@ article.row.user
       = link_to user.perfil_url do
         h3
           = user.name
-          small = " @#{user.screen_name} - tweets: #{user.tweets_count}"
+          small
+            = " #{user.screen_name} - "
+            = icon('twitter', user.tweets_count, class: 'blue')
 
     = render user.tweets
