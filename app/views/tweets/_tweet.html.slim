@@ -1,0 +1,12 @@
+article.row.tweet
+  .col-sm-12.col-md-12.col-xs-12
+    .caption
+      = link_to tweet.url do
+        h3
+          = tweet.user_name
+          small = " #{tweet.user_screen_name} #{I18n.l(tweet.created_at, :format => :long)}"
+      p = tweet.content
+      ul.list-inline
+        = tweet.retweet_count
+        = tweet.favorite_count
+        = tweet.followers_count

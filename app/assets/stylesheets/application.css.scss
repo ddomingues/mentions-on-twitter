@@ -24,5 +24,32 @@
 }
 
 .container {
-  margin-top: 80px;
+  margin-top: 60px;
+}
+
+.green{color:#5c913b;}
+
+.golden{color: #ffac33;}
+
+.red {color: red;}
+
+.empty{color: #ccd6dd;}
+
+.panel-body .row:not(:first-child) {
+  border-color: #ddd;
+  border-top: 1px ridge;
+  padding-top: 20px;
+}
+
+.panel-body h3 {
+  margin-top: 0;
+}
+
+.user .caption {
+  border-bottom: 1px ridge;
+}
+
+.user .tweet {
+  margin: 15px;
+  border: 1px ridge;
 }

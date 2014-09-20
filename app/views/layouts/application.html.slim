@@ -6,7 +6,7 @@ html lang="pt"
     meta name="description" content=""
 
     title
-      = page_title(app_name: 'Mentions on Twitter')
+      = page_title(app_name: 'Twitter')
 
     link href="/favicon.ico" rel=("shortcut icon")
 
@@ -18,7 +18,7 @@ html lang="pt"
       script src="http://html5shim.googlecode.com/svn/trunk/html5.js"
 
   body class=body_class
-    = render :partial => 'shared/navigation'
+    = render :partial => 'layouts/navigation'
     .container
       = render 'flash_messages'
       = yield
