@@ -1,6 +1,6 @@
-# mentions-on-twitter
+# mentions-on-twitter [![Code Climate](https://codeclimate.com/github/ddomingues/mentions-on-twitter/badges/gpa.svg)](https://codeclimate.com/github/ddomingues/mentions-on-twitter)
 
-This project is a [Rails](http://rubyonrails.org/) application used to SOMETHING.
+This project shows tweets and tweets by user about an user in twitter.
 
 [Live Demo](http://mentions-on-twitter.herokuapp.com)
 
