@@ -8,14 +8,11 @@
  */
 
 .navigation-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
   margin-bottom: 20px;
 }
 
-.container {
-  margin-top: 60px;
+body > .container {
+  margin-top: 40px;
 }
 
 .green{color:#5c913b;}
