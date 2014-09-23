@@ -14,11 +14,15 @@ class Tweet
   end
 
   def in_reply_to
-    @tweet['in_reply_to_user_id']
+    @tweet['in_reply_to_user_id_str']
+  end
+
+  def not_in_reply_to? (user_id)
+    in_reply_to != user_id
   end
 
   def followers_count
-    user['followers_count'].to_i
+    user['followers_count']
   end
 
   def user_name
@@ -42,7 +46,7 @@ class Tweet
   end
 
   def favorite_count
-    @tweet['favorite_count'] || user['favourites_count']
+    @tweet['favorite_count'] || 0
   end
 
   def created_at

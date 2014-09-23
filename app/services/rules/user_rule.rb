@@ -1,9 +1,7 @@
 module Rules
   class UserRule < Rule
 
-    ID_USER_LOCAWEB = '42'
-
-    def initialize(id_user = ID_USER_LOCAWEB)
+    def initialize(id_user)
       @id_user = id_user
     end
 

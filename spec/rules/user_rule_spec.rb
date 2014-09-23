@@ -2,24 +2,25 @@ require 'spec_helper'
 
 RSpec.describe Rules::UserRule do
 
-  before do
-    @tweets = [
-        Tweet.new({
-                      "entities" =>  {
-                          "user_mentions"=> [{"id_str" => '42'}]
-                      }
-                  }),
-        Tweet.new({
-                      "entities" =>  {
-                          "user_mentions"=> [{"id_str" => '4322'}]
-                      }
-                  })
-    ]
+  subject { Rules::UserRule.new(Rules::RuleEngine::ID_USER_LOCAWEB) }
+
+  def tweet(id_user_mentioned)
+    Tweet.new(
+      {
+        'entities' => {
+          'user_mentions' => [{'id_str' => id_user_mentioned}]
+        }
+      }
+    )
   end
 
-  context "#apply" do
+  before do
+    @tweets = [ tweet('42'), tweet('4322') ]
+  end
 
-    it 'deve manter apenas 1 tweet' do
+  context '#apply' do
+
+    it 'should keep only 1 tweet' do
 
       subject.apply!(@tweets)
 

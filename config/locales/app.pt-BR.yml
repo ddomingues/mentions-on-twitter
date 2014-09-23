@@ -14,3 +14,4 @@ pt-BR:
   about:
     index:
       title: Sobre
+  not_connect_to_server: 'Infelizmente não podemos processar sua solicitação!'
